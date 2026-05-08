@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
 
-  // Record videos
+
   video: true,
 
   // Take screenshots automatically on test failure
