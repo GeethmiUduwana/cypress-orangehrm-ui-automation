@@ -5,27 +5,38 @@ module.exports = defineConfig({
   // Record videos
   video: true,
 
-  // Take screenshots automatically on test failure
+  // Auto screenshots on failure
   screenshotOnRunFailure: true,
 
-  // Keep videos only for failed tests (optional)
-  videoUploadOnPasses: false,
+  // Keep videos for all tests
+  videoUploadOnPasses: true,
 
-  // Viewport settings
+  // Screen size
   viewportWidth: 1280,
   viewportHeight: 720,
 
-  // Command timeout
+  // Wait timeout
   defaultCommandTimeout: 10000,
 
   e2e: {
 
+    // Base URL
     baseUrl: 'https://opensource-demo.orangehrmlive.com',
+
+    // Screenshot folder
+    screenshotsFolder: 'cypress/screenshots',
+
+    // Video folder
+    videosFolder: 'cypress/videos',
 
     setupNodeEvents(on, config) {
 
-      // implement node event listeners here
+      // Take screenshot automatically after each test
+      on('after:screenshot', (details) => {
+        console.log('Screenshot saved:', details.path)
+      })
 
+      return config
     },
 
   },
