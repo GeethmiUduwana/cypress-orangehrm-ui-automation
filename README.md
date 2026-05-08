@@ -136,7 +136,6 @@ cy.contains('Invalid credentials').should('be.visible')
 - Real-time debugging
 
 ---
-
 # 💼 Portfolio / CV Value
 
 This project demonstrates:
@@ -149,6 +148,7 @@ This project demonstrates:
 
 ---
 
+
 # 👩‍💻 Author
 
-Geethmi Uduwana
+Geethmi Sandunika Uduwana
