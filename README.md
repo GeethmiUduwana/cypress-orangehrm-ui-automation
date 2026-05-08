@@ -136,7 +136,17 @@ cy.contains('Invalid credentials').should('be.visible')
 - Real-time debugging
 
 ---
+# 💼 Portfolio / CV Value
 
+This project demonstrates:
+
+- UI automation testing
+- Cypress framework usage
+- Reusable test structure
+- Real-world web application testing
+- End-to-end workflow validation
+
+---
 
 
 # 👩‍💻 Author
